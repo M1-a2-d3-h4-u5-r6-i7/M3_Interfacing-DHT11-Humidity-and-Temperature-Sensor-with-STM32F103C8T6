@@ -2,49 +2,49 @@
 
 void setup()
 {
-Wire.begin();
+    Wire.begin();
 
-Serial.begin(9600);
-while (!Serial);
+    Serial.begin(9600);
+    while (!Serial);
 }
 
 void loop()
 {
-byte error, address;
-int I2CDevices;
+   byte error, address;
+   int I2CDevices;
 
-Serial.println(“Scanning for I2C Devices…”);
+   Serial.println(“Scanning for I2C Devices…”);
 
-I2CDevices = 0;
-for (address = 1; address < 127; address++ )
-{
-Wire.beginTransmission(address);
-error = Wire.endTransmission();
+   I2CDevices = 0;
+   for (address = 1; address < 127; address++ )
+   {
+           Wire.beginTransmission(address);
+           error = Wire.endTransmission();
 
-if (error == 0)
-{
-Serial.print(“I2C device found at address 0x”);
-if (address < 16)
-Serial.print(“0″);
-Serial.print(address, HEX);
-Serial.println(” !”);
+           if (error == 0)
+           {
+                Serial.print(“I2C device found at address 0x”);
+                if (address < 16)
+                Serial.print(“0″);
+                Serial.print(address, HEX);
+                Serial.println(” !”);
 
-I2CDevices++;
-}
-else if (error == 4)
-{
-Serial.print(“Unknown error at address 0x”);
-if (address < 16)
-Serial.print(“0”);
-Serial.println(address, HEX);
-}
-}
-if (I2CDevices == 0)
-Serial.println(“No I2C devices found\n”);
-else
-Serial.println(“****\n”);
+                I2CDevices++;
+           }
+           else if (error == 4)
+           {
+                 Serial.print(“Unknown error at address 0x”);
+                 if (address < 16)
+                 Serial.print(“0”);
+                 Serial.println(address, HEX);
+           }
+   }
+   if (I2CDevices == 0)
+   Serial.println(“No I2C devices found\n”);
+   else
+   Serial.println(“****\n”);
 
-delay(5000);
-}
+   delay(5000);
+   }
 
 

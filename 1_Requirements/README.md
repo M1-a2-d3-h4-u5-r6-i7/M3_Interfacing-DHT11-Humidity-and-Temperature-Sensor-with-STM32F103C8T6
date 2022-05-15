@@ -18,7 +18,7 @@ I have already used the DHT11 Sensor in an Arduino Project called “DHT11 Humid
 
 ### Components Required :-
 
-   !* STM32F103C8T6 MCU based STM32 Blue Pill Board
+    STM32F103C8T6 MCU based STM32 Blue Pill Board
     DHT11 Humidity and Temperature Sensor
     16×2 LCD Display
     PCF8574 I2C LCD Module

@@ -26,7 +26,9 @@ I have already used the DHT11 Sensor in an Arduino Project called “DHT11 Humid
     Connecting Wires
     USB to UART Converter (needed only if programming through UART)
     
-    ## 4'W 1'H
+    
+## 4'W 1'H
+
     
     ### What:-
        

@@ -25,3 +25,36 @@ I have already used the DHT11 Sensor in an Arduino Project called “DHT11 Humid
     5KΩ Resistor (Optional, no required if it is present on DHT11 Module)
     Connecting Wires
     USB to UART Converter (needed only if programming through UART)
+    
+    ## 4'W 1'H
+    
+    ### What:-
+       
+       Temperature and humidity sensor (or rh temp sensor) is devices that can convert temperature and humidity into electrical
+       signals that can easily measure temperature and humidity.
+       
+    ### Why:-
+      
+       Humidity sensors are electronic devices that measure and report the moisture and air temperature of the surrounding 
+       environment where they are deployed e.g., in air, soil, or confined spaces. Humidity measurements indicate the
+       concentration of water vapor presented in the air.
+        
+    ### When:-
+    
+       Temperature and humidity sensors are among the most commonly used environmental sensors. Humidity sensors are also
+       sometimes referred to as hygrometers. These devices are used to provide the actual humidity condition within the air
+       at any given point or in any given place.
+       
+     ### Who:-
+     
+       Measuring humidity within the environment can be critical due to the fact that the higher the humidity, the warmer 
+       it may seem. In industries, humidity measurement is often important because it can affect the health and safety of
+       personnel as well as the cost of the product. As a result, temperature and humidity sensors are often quite important.
+       
+     ### How:-
+     
+       It can be used in fields to check wheter ground having suficient water or not and it indicates the concentration of
+       water vapour present in air.
+      
+      
+      
